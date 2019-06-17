@@ -1,0 +1,361 @@
+html{
+	font-size: 1rem;
+	
+}
+body{
+	margin: auto 0;
+	height: 100%;
+	padding: auto: 0;
+	font-family: 'Nunito Sans';
+}
+
+.page-wrap{
+	background-color: white;
+	height: auto;
+	min-height: 100%;
+	margin: auto 0;
+	padding-left: 10rem;
+	padding-right: 10rem;
+
+/*NAVIGATION*/
+
+}
+.nav{
+	display: flex;
+	height: 15vh;
+	background-color: grey;
+	border: red;
+}
+
+.links{
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	width: 100%;
+}
+
+.linkitem{
+	display: flex;
+	/*margin: 1em;*/
+	margin-top: auto;
+	color: white;
+	padding-left: 1em;
+	padding-right: 1em;
+
+}
+
+.push{
+	margin-right: auto;
+	text-align: left;
+	font-size: 2rem;
+}
+
+/*COVER*/
+.cover{
+	display: block;
+	height: 100%;
+	text-align: center;
+	background-color: #4C4C4C;
+	margin: auto 0;
+	font-size: 2rem;
+	color: white;
+	padding: 1em
+}
+
+h5{
+	margin-bottom: 0;
+}
+
+h1{
+	
+}
+
+#first{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 7rem;
+}
+
+#last{
+	margin-top: 0;
+	font-size: 7rem;
+}
+
+/*CONTENT*/
+
+	/*ABOUT*/
+.section{
+	display: flex;
+	background-color: #D9D8DF;
+	position: relative;
+	height: 8em;
+	justify-content: center;
+	padding: 1em;
+
+}
+
+.about{
+	font-size: 1.5rem;
+	border: dotted 1px #000;
+	background-color: white;
+	width: 80%;
+	/*padding: 200px;*/
+	position: absolute;
+	bottom: .5em;
+
+}
+
+	/*OTHER CONTENT*/
+
+.prof{
+	padding: 1em;
+	margin: 5em;
+
+}
+.info{
+	text-align: center;
+	display: block;
+	background-color: #D9D8DF;
+	position: relative;
+	height: 100%;
+	padding: 5em;
+
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.griditem{
+	width: 100%;
+	align-self: center;
+	margin: 1em;
+}
+
+progress[value]{
+	-webkit-appearance:none;
+	appearance: none;
+	height: 1.5rem;
+	width: 25rem;
+}
+
+progress[value]::-webkit-progress-bar{
+	background-color: #eee;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value{
+	background-image:
+		-webkit-linear-gradient(-45deg,
+								transparent 33%, rgba(0,0,0,.1) 33%,
+								rgba(0,0,0,.1) 66%, transparent 66%),
+		-webkit-linear-gradient(top,
+								rgba(255,255,255,.25),
+								rgba(0,0,0,.25)),
+		-webkit-linear-gradient(left, #09c, #f44);
+
+		border-radius: 2px;
+		background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.exp{
+	margin: 5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Set a background color */
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/*INTERESTS*/
+
+.interest{
+	margin: 5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.intlinks{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+.intgrid{
+	width: 100%;
+
+}
+
+.contact{
+	display: grid;
+	grid-template-columns: 2fr  1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	width: 70%;
+	margin: 5em;
+	background-color: grey;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	font-size: 1.5rem;
+	padding: 2em;
+	grid-gap: .5em .5em;
+	color: white;
+	align-items: start;
+
+
+}
+
+input{
+	width: 100%;
+	height: 100%;
+}
+
+.contactgrid{
+	height: autor;
+}
+
+.goal{
+	grid-row-start: span 4;
+	display: block;
+	text-align: left;
+
+}
+
+.phone{
+	grid-row: 2;
+	grid-column: 2/ span 2;
+	width: 100%;
+}
+
+.message{
+	grid-row: 3;
+	grid-column: 2/ span 2;
+	height: 100%;
+}
+
+.submit{
+	grid-row: 4;
+	grid-column: 2/ span 2;
+}
+
+h4{
+	margin: 0;
+}
+
+footer{
+	display: flex;
+	background-color: grey;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+

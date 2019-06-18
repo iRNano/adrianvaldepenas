@@ -293,6 +293,13 @@ body {
 
 }
 
+/*CONTACT*/
+
+input{
+	width: 100%;
+	height: 100%;
+	font-size: 1.5rem;
+}
 .contact{
 	display: grid;
 	grid-template-columns: 2fr  1fr 1fr;
@@ -309,16 +316,10 @@ body {
 	color: white;
 	align-items: start;
 
-
-}
-
-input{
-	width: 100%;
-	height: 100%;
 }
 
 .contactgrid{
-	height: autor;
+	/*height: auto;*/
 }
 
 .goal{
@@ -335,14 +336,18 @@ input{
 }
 
 .message{
-	grid-row: 3;
+	grid-row: 3 / span 2;
 	grid-column: 2/ span 2;
 	height: 100%;
 }
 
 .submit{
-	grid-row: 4;
+	grid-row: 5;
 	grid-column: 2/ span 2;
+}
+
+::placeholder{
+	font-size: 2rem;
 }
 
 h4{

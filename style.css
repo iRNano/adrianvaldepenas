@@ -182,7 +182,7 @@ body {
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -282,7 +282,7 @@ body {
 .intlinks{
 	display: grid;
 	grid-template-columns: auto auto auto auto auto;
-	width: 70%;
+	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
 
@@ -295,16 +295,12 @@ body {
 
 /*CONTACT*/
 
-input{
-	width: 100%;
-	height: 100%;
-	font-size: 1.5rem;
-}
+
 .contact{
 	display: grid;
 	grid-template-columns: 2fr  1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
-	width: 70%;
+	width: 80%;
 	margin: 5em;
 	background-color: grey;
 	margin-left: auto;
@@ -312,14 +308,21 @@ input{
 	height: 100%;
 	font-size: 1.5rem;
 	padding: 2em;
-	grid-gap: .5em .5em;
+	grid-gap: 1em 1em;
 	color: white;
 	align-items: start;
+}
 
+input{
+	width: 100%;
+	height: 100%;
+	font-size: 1.5rem;
 }
 
 .contactgrid{
 	/*height: auto;*/
+/*	margin-top: 1em;
+	margin-bottom: 1em;*/
 }
 
 .goal{
@@ -347,6 +350,11 @@ input{
 }
 
 ::placeholder{
+	font-size: 2rem;
+}
+
+textarea{
+	resize:none;
 	font-size: 2rem;
 }
 

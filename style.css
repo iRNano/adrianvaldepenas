@@ -20,7 +20,7 @@ body{
 
 }
 
-.sticky{
+.fixie{
 	position: fixed;
 	top: 0;
 	left: 10rem;

@@ -115,9 +115,10 @@ h5{
 
 	/*OTHER CONTENT*/
 
-h3{
+/*h3{
 	margin: 0;
-}
+	width: 100%;
+}*/
 
 .info{
 	text-align: center;
@@ -132,18 +133,19 @@ h3{
 
 .prof{
 	margin: 5em;
+	align-items: center;
 
 }
 
 .grid{
+	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr  2.5fr .5fr;
-	margin-left: auto;
-	margin-right: auto;
+	grid-template-columns: fit-content(200px) minmax(200px, 400px) fit-content(50px);
+	justify-content: center;
 }
 
 .griditem{
-/*	width: 100%;*/
+
 	align-self: center;
 	margin: 1em;
 }
@@ -151,8 +153,8 @@ h3{
 progress[value]{
 	-webkit-appearance:none;
 	appearance: none;
-	height: 1.5rem;
-	width: 25rem;
+	height: 50%;
+	width: 100%;
 }
 
 progress[value]::-webkit-progress-bar{
@@ -428,7 +430,7 @@ and (max-width: 1823px){
 		bottom: 4em;
 	}
 
-	.grid{
+/*	.grid{
 		display: grid;
 		grid-template-columns: 1fr  2.5fr .5fr;
 		margin-left: auto;
@@ -466,7 +468,7 @@ and (max-width: 1823px){
 
 			border-radius: 2px;
 			background-size: 35px 20px, 100% 100%, 100% 100%;
-	}
+	}*/
 
 }
 

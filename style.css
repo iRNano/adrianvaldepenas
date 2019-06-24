@@ -56,8 +56,12 @@ body{
 	font-size: 2rem;
 }
 
+a{
+	text-decoration: none;
+}
 a:link{
 	color: #E06C09
+
 }
 
 a:visited{
@@ -100,7 +104,7 @@ h5{
 }
 
 h1{
-	color: #E06C09;
+	color: #E06C09; /*ORANGE*/
 }
 
 
@@ -158,7 +162,8 @@ h1{
 	display: block;
 	background-color: #4E4545;
 	height: 100%;
-	padding: 5em;
+	padding-top: 5em;
+/*	padding: 5em;*/
 
 }
 
@@ -213,20 +218,24 @@ progress[value]::-webkit-progress-value{
 }
 
 
-/*EXPERIENCE*/
+/*EXPERIENCE*/ 
+
+/*TIMELINE*/
 
 .exp{
 	margin: 5em;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: grey;
+	padding: 5em;
 }
 
 
 /* Set a background color */
-body {
+/*body {
   background-color: #474e5d;
   font-family: Helvetica, sans-serif;
-}
+}*/
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -330,17 +339,19 @@ body {
 
 .intlinks{
 	display: grid;
-	grid-template-columns: auto auto auto auto auto;
-	width: 80%;
-	margin-right: auto;
-	margin-left: auto;
-
+	grid-template-columns: 180px 180px 180px 180px 180px;
+	justify-content: center;
+	grid-gap: 1em;
 }
 
 .intgrid{
 	width: 100%;
-	align-self: center;
-	padding: 4em;
+	align-items: center;
+	padding: 2em;
+}
+
+#label{
+	color: #E06C09;
 }
 
 
@@ -348,20 +359,16 @@ body {
 
 
 .contact{
-	display: grid;
-	grid-template-columns: 2fr  1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	width: 80%;
-	margin: 5em;
+
 	background-color: grey;
-	margin-left: auto;
-	margin-right: auto;
-	height: 100%;
 	font-size: 1.5rem;
-	padding: 2em;
-	grid-gap: 1em 1em;
+	padding: 5em;
+	padding-left: 10em;
+	padding-right: 10em;
 	color: white;
 	align-items: start;
+	background-color: grey;
+
 }
 
 input{
@@ -371,9 +378,12 @@ input{
 }
 
 .contactgrid{
-	/*height: auto;*/
-/*	margin-top: 1em;
-	margin-bottom: 1em;*/
+	display: grid;
+	grid-template-columns: 2fr  1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-gap: 1em 1em;
+	background-color: #4E4545;
+	padding:2em;
 }
 
 .goal{
@@ -419,7 +429,7 @@ h4{
 
 footer{
 	display: flex;
-	background-color: grey;
+	background-color: #4E4545;
 	justify-content: center;
 	align-items: center;
 }

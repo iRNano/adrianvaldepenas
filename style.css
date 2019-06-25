@@ -475,21 +475,30 @@ h1::before{
 		bottom: 4em;
 	}
 
+	.contractgrid{
+		font-size: 1rem;
+	}
+
+	.goal{
+		font-size: 1rem;
+	}
+
+	::placeholder{
+	font-size: 1rem;
+	}
+
+	textarea{
+		resize:none;
+		font-size: 1rem;
+	}
+
+	input{
+		font-size: 1rem;
+	}
+
 }
 
 @media screen and (max-width: 1223px){
-/*	.contact{
-
-	background-image: url("https://raw.githubusercontent.com/iRNano/adrianvaldepenas/master/assets/contact.jpg");
-	font-size: 1rem;
-	padding: 5em;
-	padding-left: 10em;
-	padding-right: 10em;
-	color: white;
-	align-items: start;
-	background-color: grey;
-
-}*/
 
 input{
 	font-size: 1rem;

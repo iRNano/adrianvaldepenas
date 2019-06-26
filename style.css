@@ -27,6 +27,7 @@ cursor: default;
 	z-index: 20;
 	width: 100%;
 	justify-content: center;
+	font-size: 1.2rem;
 
 
 
@@ -338,7 +339,7 @@ progress[value]::-webkit-progress-value{
 .intgrid{
 	width: 100%;
 	align-items: center;
-	padding: 2.5em;
+/*	padding: 2.5em;*/
 }
 
 #label{

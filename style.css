@@ -118,19 +118,21 @@ h5{
 
 h1{
 	color: #E06C09; /*ORANGE*/
+	font-size: 2.5rem;
 }
 
 
 
-#first{
+.namecover{
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 7rem;
+	padding: 0;
+	line-height: .9em;
 }
 
-#last{
-	margin-top: 0;
-	font-size: 7rem;
+.lastname{
+	margin-bottom: 1em;
 }
 
 /*CONTENT*/
@@ -155,8 +157,7 @@ h1{
 	border: dotted 1px #000;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
-	left: 5em;
-	right: 5em;
+	width: 60%;
 	bottom: 2em;
 
 
@@ -198,12 +199,13 @@ h1{
 
 .griditem{
 	align-self: center;
+	text-align: left;
 }
 
 progress[value]{
 	-webkit-appearance:none;
 	appearance: none;
-	height: 75%;
+	height: 40%;
 	width: 95%;
 	margin: 1em;
 
@@ -253,12 +255,13 @@ progress[value]::-webkit-progress-value{
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 80%;
+  max-width: 50%;
   margin: 0 auto;
 }
 
 .h1timeline{
 	margin: 0;
+	font-size: 2rem;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -320,6 +323,10 @@ progress[value]::-webkit-progress-value{
   border-radius: 6px;
 }
 
+.contentalign{
+	text-align: justify;
+}
+
 /*INTERESTS*/
 
 .interest{
@@ -371,18 +378,25 @@ input{
 
 .contactgrid{
 	display: grid;
-	grid-template-columns: 2fr  1fr 1fr;
+	grid-template-columns: 1.5fr  1.25fr 1.25fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
 	grid-gap: 1em 1em;
 	background-color: #121010;
 	padding:2em;
+	width: 50%;
+	margin: 0 auto;
 }
 
 .goal{
 	grid-row-start: span 4;
 	display: block;
 	text-align: left;
+	padding: 1em;
+	padding-top: 0;
+}
 
+#contact{
+	margin: 0;
 }
 
 .phone{
@@ -405,7 +419,7 @@ input{
 }
 
 ::placeholder{
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 
 textarea{
@@ -428,6 +442,8 @@ footer{
 .footercontent{
 	display: flex;
 	width: 60%;
+	font-size: 1.2rem;
+	color: #E06C09;
 	
 }
 /*
@@ -443,7 +459,7 @@ h1::before{
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 1823px){
+@media screen and (max-width: 1920px){
 	/*NAVIGATION BAR*/
 	.nav{
 		height: 10vh;
@@ -455,13 +471,11 @@ h1::before{
 	padding: 5em;
 	}
 
-	#first{
+	#name{
 		font-size: 5rem;
 	}
 
-	#last{
-		font-size: 5rem;
-	}
+	
 
 	/*ABOUT*/
 
@@ -475,6 +489,8 @@ h1::before{
 		font-size: 1.5rem;
 		bottom: 4em;
 	}
+
+	/*CONTACT*/
 
 	.contractgrid{
 		font-size: 1rem;

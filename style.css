@@ -105,6 +105,8 @@ a:active{
 	display: block;
 	height: 100%;
 	text-align: center;
+	background-position: center;
+	background-size: cover;
 	background-image: url("https://raw.githubusercontent.com/iRNano/adrianvaldepenas/master/assets/header.jpg");
 	font-size: 2rem;
 	color: orange;
@@ -346,11 +348,12 @@ progress[value]::-webkit-progress-value{
 .intgrid{
 	width: 100%;
 	align-items: center;
-/*	padding: 2.5em;*/
+	padding: 2em;
 }
 
 #label{
 	color: #E06C09;
+	margin: 0;
 }
 
 
@@ -358,8 +361,9 @@ progress[value]::-webkit-progress-value{
 
 
 .contact{
-
+	background-position: center;
 	background-image: url("https://raw.githubusercontent.com/iRNano/adrianvaldepenas/master/assets/contact.jpg");
+	background-size: cover;
 	font-size: 1.5rem;
 	padding: 5em;
 	padding-left: 10em;
@@ -446,6 +450,8 @@ footer{
 	color: #E06C09;
 	
 }
+
+/*LINKS*/
 /*
 h1::before{
 	display: block;
